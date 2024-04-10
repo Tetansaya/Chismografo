@@ -1,0 +1,10 @@
+.footer {
+    background-color: #00BB2D; /* Cambia el color de fondo a tu preferencia */
+    color: #fff; /* Cambia el color del texto a tu preferencia */
+    padding: 20px 0; /* Añade un poco de espacio alrededor del contenido del footer */
+    text-align: center; /* Centra el texto dentro del footer */
+    width: 100%; /* Ocupa todo el ancho de la página */
+    position: fixed; /* Fija el footer en la posición especificada */
+    bottom: 0; /* Lo coloca en la parte inferior */
+  }
+  
