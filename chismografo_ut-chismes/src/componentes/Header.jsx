@@ -10,11 +10,10 @@ const Header = () => {
           
         </div>
         <div className="title-container">
-          <h1>Chismografo UTCH</h1>
+          <h1>UT-Chismes</h1>
         </div>
         <nav>
           <ul>
-            <li><a href="/">Perfil</a></li>
             <li><a href="/acerca">Cerrar sesion</a></li>
           </ul>
         </nav>
