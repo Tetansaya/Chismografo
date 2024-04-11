@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function Meca() {
+function DN() {
   const [posts, setPosts] = useState([]);
   const [newPostTitle, setNewPostTitle] = useState('');
   const [newPostContent, setNewPostContent] = useState('');
@@ -8,7 +8,7 @@ function Meca() {
 
   // Cargar posts al cargar el componente
   useEffect(() => {
-    const savedPosts = localStorage.getItem('Meca_posts');
+    const savedPosts = localStorage.getItem('DN_posts');
     if (savedPosts) {
       setPosts(JSON.parse(savedPosts));
     }
@@ -17,7 +17,7 @@ function Meca() {
   // Guardar posts en almacenamiento local al actualizar
   useEffect(() => {
     if (posts.length > 0) {
-      localStorage.setItem('Meca_posts', JSON.stringify(posts));
+      localStorage.setItem('DN_posts', JSON.stringify(posts));
     }
   }, [posts]);
 
@@ -98,7 +98,7 @@ function Meca() {
 
   return (
     <div>
-      <h1>Meca</h1>
+      <h1>DN</h1>
       <div>
         <h2>Nuevo Chisme...</h2>
         <input
@@ -146,4 +146,4 @@ function Meca() {
   );
 }
 
-export default Meca;
+export default DN;
