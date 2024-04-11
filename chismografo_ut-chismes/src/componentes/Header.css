@@ -1,45 +1,34 @@
 .header {
-    background-color: #00BB2D; /* Cambia el color de fondo a tu preferencia */
-    color: #fff; /* Cambia el color del texto a tu preferencia */
-    padding: 20px 0; /* Añade espacio alrededor del contenido del header */
-  }
-  
-  .container {
-    max-width: 960px; /* Limita el ancho del contenido */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-    padding: 0 15px; /* Añade espacio adicional alrededor del contenido */
-    display: flex; /* Usa flexbox para alinear elementos */
-    align-items: center; /* Centra verticalmente los elementos */
-  }
-  
-  .logo {
-    height: 30px; /* Ajusta la altura del logo */
-    width: auto; /* Ajusta el ancho del logo automáticamente para mantener la proporción */
-    margin-left: 0; /* Ajusta el margen izquierdo del logo */
-    margin-right: 20px; /* Añade espacio entre el logo y el título */
-  }
-  
-  
-  h1 {
-    margin: 0; /* Elimina el margen superior e inferior del título */
-  }
-  
-  nav ul {
-    list-style-type: none; /* Elimina los puntos de lista */
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline; /* Muestra los elementos de la lista en línea */
-    margin-right: 15px; /* Añade espacio entre los elementos */
-  }
-  
-  nav ul li:last-child {
-    margin-right: 0; /* Elimina el margen derecho del último elemento */
-  }
-  
-  nav ul li a {
-    color: #fff; /* Cambia el color de los enlaces a tu preferencia */
-    text-decoration: none; /* Elimina la subrayado de los enlaces */
-  }
-  
+  background-color: #00BB2D; /* Cambia el color de fondo a tu preferencia */
+  color: #fff; /* Cambia el color del texto a tu preferencia */
+  padding: 20px 0; /* Añade espacio alrededor del contenido del header */
+}
+
+.container {
+  max-width: 960px; /* Limita el ancho del contenido */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  padding: 0 15px; /* Añade espacio adicional alrededor del contenido */
+}
+
+h1 {
+  margin: 0; /* Elimina el margen superior e inferior del título */
+}
+
+nav ul {
+  list-style-type: none; /* Elimina los puntos de lista */
+  padding: 0;
+}
+
+nav ul li {
+  display: inline; /* Muestra los elementos de la lista en línea */
+  margin-right: 15px; /* Añade espacio entre los elementos */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+nav ul li a {
+  color: #fff; /* Cambia el color de los enlaces a tu preferencia */
+  text-decoration: none; /* Elimina la subrayado de los enlaces */
+}
