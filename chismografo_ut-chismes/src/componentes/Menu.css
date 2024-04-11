@@ -3,12 +3,15 @@
 }
 
 .button-container {
+  
+
   display: flex; /* Utiliza flexbox para alinear los botones */
   justify-content: center; /* Centra los elementos en el eje principal (horizontal) */
   margin-top: 100px; /* Agrega un margen superior para separarlos del título */
 }
 
 .big-button {
+  height: 250px; 
   font-size: 24px;
   padding: 100px 150px;
   margin: 10px;
@@ -48,3 +51,7 @@
   background-image: url('../imagenes/DN.jpg');
   background-size: cover;
 }
+
+
+
+
