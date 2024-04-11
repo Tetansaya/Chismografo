@@ -6,13 +6,16 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <img src={LogoUTCH} alt="Logo de la Aplicación" className="logo" />
-        <h1>Chismografo UTCH</h1>
+        <div className="logo-container">
+          
+        </div>
+        <div className="title-container">
+          <h1>Chismografo UTCH</h1>
+        </div>
         <nav>
           <ul>
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/acerca">Acerca</a></li>
-            <li><a href="/contacto">Contacto</a></li>
+            <li><a href="/">Perfil</a></li>
+            <li><a href="/acerca">Cerrar sesion</a></li>
           </ul>
         </nav>
       </div>

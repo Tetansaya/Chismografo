@@ -1,0 +1,50 @@
+.App {
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.button-container {
+  display: flex; /* Utiliza flexbox para alinear los botones */
+  justify-content: center; /* Centra los elementos en el eje principal (horizontal) */
+  margin-top: 100px; /* Agrega un margen superior para separarlos del título */
+}
+
+.big-button {
+  font-size: 24px;
+  padding: 100px 150px;
+  margin: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-image: none; /* Inicialmente no hay imagen de fondo */
+  background-size: cover;
+  width: 400px;
+}
+
+.button1 {
+  background-color: #007bff;
+}
+
+.button1:hover {
+  background-image: url('../imagenes/TI.jpg');
+  background-size: cover;
+}
+
+.button2 {
+  background-color: #007bff;
+}
+
+.button2:hover {
+  background-image: url('../imagenes/Mecatronica.jpg');
+  background-size: cover;
+}
+
+.button3 {
+  background-color: #007bff;
+}
+
+.button3:hover {
+  background-image: url('../imagenes/DN.jpg');
+  background-size: cover;
+}
