@@ -3,6 +3,7 @@ import Ti from './components/ti';
 import './App.css';
 import Header from './componentes/Header';
 import Footer from './componentes/Footer';
+import Mecatrónica from './componentes/meca';
 
 function App() {
   return (
