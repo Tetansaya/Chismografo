@@ -1,4 +1,6 @@
+// DN.jsx
 import React, { useState, useEffect } from 'react';
+import './Forum.css'; // Importamos el archivo de estilos CSS
 
 function DN() {
   const [posts, setPosts] = useState([]);
@@ -97,9 +99,9 @@ function DN() {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1>DN</h1>
-      <div>
+      <div className="new-post-container">
         <h2>Nuevo Chisme...</h2>
         <input
           type="text"
@@ -107,22 +109,26 @@ function DN() {
           onChange={handleNewPostTitleChange}
           placeholder="Título (máx. 30 caracteres)"
         />
+        <p></p>
         <textarea
           value={newPostContent}
           onChange={handleNewPostContentChange}
           placeholder="Contenido (máx. 255 caracteres)"
         />
-        <button onClick={handleNewPostSubmit}>Publicar</button>
+        <p></p>
+        <button className="post-button" onClick={handleNewPostSubmit}>Publicar</button>
       </div>
-      <div>
-        <h2>Chismes</h2>
+      <div className="post-container">
+      <div className="barrera">
+          <h2>Chismes</h2>
+        </div>
         {posts.map((post) => (
-          <div key={post.id}>
+          <div key={post.id} className="barrera">
             <h3>{post.title}</h3>
             <p>{post.content}</p>
             <p>Publicado por: {post.userId}</p>
             <p>Fecha: {post.date}</p>
-            <button onClick={() => eliminarPost(post.id)}>Eliminar Post</button>
+            <button className="post-button" onClick={() => eliminarPost(post.id)}>Eliminar Post</button>
             <h4>Comentarios</h4>
             <input
               type="text"
@@ -130,13 +136,13 @@ function DN() {
               onChange={handleNewCommentChange}
               placeholder="Agregar comentario (máx. 255 caracteres)"
             />
-            <button onClick={() => handleNewCommentSubmit(post.id)}>Comentar</button>
+            <button className="comment-button" onClick={() => handleNewCommentSubmit(post.id)}>Comentar</button>
             {post.comments.map((comment) => (
-              <div key={comment.id}>
+              <div key={comment.id} className="comment-container">
                 <p>{comment.content}</p>
                 <p>Comentado por: {comment.userId}</p>
                 <p>Fecha: {comment.date}</p>
-                <button onClick={() => eliminarComentario(post.id, comment.id)}>Eliminar Comentario</button>
+                <button className="comment-button" onClick={() => eliminarComentario(post.id, comment.id)}>Eliminar Comentario</button>
               </div>
             ))}
           </div>

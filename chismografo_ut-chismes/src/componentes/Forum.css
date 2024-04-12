@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .barrera{
+    border: 1px solid #000000;
+    margin: 5px ;
+  }
+  .post-container {
+    border: 1px solid #000000;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+    
+  }
+  
+  .comment-container {
+    border: 1px solid #000000;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  
+  .new-post-container {
+    border: 1px solid #000000;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  
+  .new-comment-container {
+    border: 1px solid #000000;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Forum.css */
+
+/* Estilo para los botones de los post y comentarios */
+.post-button,
+.comment-button {
+  background-color: #c8e6c9; /* Color verde pastel claro */
+  color: #000; /* Color del texto */
+  border: none; /* Elimina el borde */
+  padding: 5px 10px; /* Añade espacio interno */
+  margin-right: 5px; /* Ajusta el margen derecho */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  border-radius: 3px; /* Agrega esquinas redondeadas */
+}
+
+/* Estilo para los botones de los post */
+.post-button {
+  margin-bottom: 5px; /* Ajusta el margen inferior */
+}
+
+/* Estilo para los botones de los comentarios */
+.comment-button {
+  margin-top: 5px; /* Ajusta el margen superior */
+}
+.post {
+    border-bottom: 1px solid #000000; /* Agrega un borde inferior de 1 píxel sólido y de color gris claro */
+    padding-bottom: 20px; /* Añade un espacio entre cada post y la línea */
+    margin-bottom: 20px; /* Añade espacio entre cada post */
+  }
+  

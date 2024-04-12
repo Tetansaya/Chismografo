@@ -4,10 +4,7 @@
     padding: 20px 0;
     text-align: center;
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex; /* Agrega esta línea */
     align-items: center; /* Agrega esta línea */
+    
 }

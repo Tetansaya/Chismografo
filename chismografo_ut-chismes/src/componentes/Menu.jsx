@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Menu.css'; // Asegúrate de tener un archivo de estilos CSS para tus estilos personalizados
-import Mecatrónica from './Meca';
+import Mecatrónica from './meca';
 import DN from './DN';
 import Ti from './Ti';
 

@@ -1,6 +1,8 @@
+// TI.jsx
 import React, { useState, useEffect } from 'react';
+import './Forum.css'; // Importamos el archivo de estilos CSS
 
-function Forum() {
+function TI() {
   const [posts, setPosts] = useState([]);
   const [newPostTitle, setNewPostTitle] = useState('');
   const [newPostContent, setNewPostContent] = useState('');
@@ -8,7 +10,7 @@ function Forum() {
 
   // Cargar posts al cargar el componente
   useEffect(() => {
-    const savedPosts = localStorage.getItem('forum_posts');
+    const savedPosts = localStorage.getItem('TI_posts');
     if (savedPosts) {
       setPosts(JSON.parse(savedPosts));
     }
@@ -17,7 +19,7 @@ function Forum() {
   // Guardar posts en almacenamiento local al actualizar
   useEffect(() => {
     if (posts.length > 0) {
-      localStorage.setItem('forum_posts', JSON.stringify(posts));
+      localStorage.setItem('TI_posts', JSON.stringify(posts));
     }
   }, [posts]);
 
@@ -97,9 +99,9 @@ function Forum() {
   };
 
   return (
-    <div>
-      <h1>Ti</h1>
-      <div>
+    <div className="container">
+      <h1>TI</h1>
+      <div className="new-post-container">
         <h2>Nuevo Chisme...</h2>
         <input
           type="text"
@@ -107,22 +109,26 @@ function Forum() {
           onChange={handleNewPostTitleChange}
           placeholder="Título (máx. 30 caracteres)"
         />
+        <p></p>
         <textarea
           value={newPostContent}
           onChange={handleNewPostContentChange}
           placeholder="Contenido (máx. 255 caracteres)"
         />
-        <button onClick={handleNewPostSubmit}>Publicar</button>
+        <p></p>
+        <button className="post-button"onClick={handleNewPostSubmit}>Publicar</button>
       </div>
-      <div>
-        <h2>Chismes</h2>
+      <div className="post-container">
+      <div className="barrera">
+          <h2>Chismes</h2>
+        </div>
         {posts.map((post) => (
-          <div key={post.id}>
+          <div key={post.id}className="barrera">
             <h3>{post.title}</h3>
             <p>{post.content}</p>
             <p>Publicado por: {post.userId}</p>
             <p>Fecha: {post.date}</p>
-            <button onClick={() => eliminarPost(post.id)}>Eliminar Post</button>
+            <button className="post-button" onClick={() => eliminarPost(post.id)}>Eliminar Post</button>
             <h4>Comentarios</h4>
             <input
               type="text"
@@ -130,13 +136,13 @@ function Forum() {
               onChange={handleNewCommentChange}
               placeholder="Agregar comentario (máx. 255 caracteres)"
             />
-            <button onClick={() => handleNewCommentSubmit(post.id)}>Comentar</button>
+            <button className="comment-button" onClick={() => handleNewCommentSubmit(post.id)}>Comentar</button>
             {post.comments.map((comment) => (
-              <div key={comment.id}>
+              <div key={comment.id} className="comment-container">
                 <p>{comment.content}</p>
                 <p>Comentado por: {comment.userId}</p>
                 <p>Fecha: {comment.date}</p>
-                <button onClick={() => eliminarComentario(post.id, comment.id)}>Eliminar Comentario</button>
+                <button className="comment-button" onClick={() => eliminarComentario(post.id, comment.id)}>Eliminar Comentario</button>
               </div>
             ))}
           </div>
@@ -146,4 +152,4 @@ function Forum() {
   );
 }
 
-export default Forum;
+export default TI;
